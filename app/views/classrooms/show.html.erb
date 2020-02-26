@@ -4,9 +4,3 @@
 <%- @classroom.students.each do |student| %>
  <%= render partial: 'students/student', locals: {student: student} %>
 <% end %>
-
-Classroom Info
-<p>
-<%= @classroom.course_name %>
-<%= @classroom.semester %>
-</p>
