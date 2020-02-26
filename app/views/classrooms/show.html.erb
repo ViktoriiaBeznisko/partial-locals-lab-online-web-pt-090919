@@ -1,4 +1,8 @@
 <%= render 'classroom' %>
+
+<h3>All students of this classroom:</h3>
+<%- @classroom.students.each do |student| %>
+
 Classroom Info
 <p>
 <%= @classroom.course_name %>
